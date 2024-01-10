@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/output.css">
+    <title>Hshcool</title>
+</head>
+<body class="">
+    <!--Navigation Bar-->
+    <nav class="">
+        <!--Flex Container-->
+        <div class="flex  justify-between ">
+
+            <!--Logo-->
+            <div class="flex pt-[28px] flex-col sm:flex-row "> 
+                <div class="ml-[35px] absolute  text-green text-4xl font-bold font-['Poppins']">Courses</div>
+                <div class=" ml-[214px]  absolute text-4xl font-bold font-['Poppins'] "><span class="text-green ">H</span><span class="text-rose">School</span></div>
+            </div>
+            <!--Menu Item-->
+            <div class="hidden text-gray text-2xl pt-[37px] font-['Poppins'] md:flex ">
+                <a href="#" class="ml-[40%] ">Courses</a>
+                <a href="#" class="ml-[60px]">Dashboard</a>
+            </div>
+
+            <!--User Icon-->
+            <div class="hidden  mt-[25px] mb-[14px] mr-[42px] md:block ">
+                <img src="../images/user-icon.svg" alt="user-icon">
+            </div>
+        </div>
+
+        <!--Hamburger Icon-->
+        <button
+            id="menu-btn"
+            class=" 
+            block md:hidden hamburger
+            "
+        >
+            <span class="
+                hamburger-top 
+            "></span>
+            <span class="
+            hamburger-middle
+            "></span>
+            <span class="
+            hamburger-bottom 
+            "></span>
+     </button>
+
+     <!--Mobile Menu-->
+     <div class="md:hidden transition-all">
+        <div 
+        id="menu"
+        class=" flex flex-col  items-center mt-8 py-8 space-y-6 bg-white"
+        >
+        <a href="#" class="text-gray text-2xl font-['Poppins']">Courses</a>
+        <a href="#" class="text-gray text-2xl font-['Poppins']">Dashboard</a>
+        <a href="#">
+            <img src="../images/user-icon.svg" alt="user-icon">
+        </a>
+        </div>
+       
+     </div>
+    </nav>
+</body>
+<script src="../js/main.js"></script>
+</html>
