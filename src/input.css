@@ -14,7 +14,7 @@
     position: relative;
   }
   
-  .hamburger-top,
+   .hamburger-top, 
   .hamburger-middle,
   .hamburger-bottom {
     position: absolute;
@@ -41,7 +41,7 @@
   }
   
   .open .hamburger-top {
-    transform: rotate(45deg) translateY(6px) translate(6px);
+    transform: rotate(45deg)  translate(6px);
   }
   
   .open .hamburger-middle {
@@ -49,7 +49,7 @@
   }
   
   .open .hamburger-bottom {
-    transform: rotate(-45deg) translateY(6px) translate(-6px);
+    transform: rotate(-45deg)  translateY(6px);
   }
 
  

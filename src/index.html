@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="../css/output.css">
     <title>Hshcool</title>
 </head>
-<body class="">
+<body class=" flex flex-col bg-lightGray">
     <!--Navigation Bar-->
-    <nav class="">
+    <nav class="bg-white">
         <!--Flex Container-->
         <div class="flex  justify-between ">
 
@@ -25,7 +25,9 @@
 
             <!--User Icon-->
             <div class="hidden  mt-[25px] mb-[14px] mr-[42px] md:block ">
-                <img src="../images/user-icon.svg" alt="user-icon">
+                <a href="#">
+                    <img src="../images/user-icon.svg" alt="user-icon">
+                </a>
             </div>
         </div>
 
@@ -48,10 +50,10 @@
      </button>
 
      <!--Mobile Menu-->
-     <div class="md:hidden transition-all">
+     <div class="md:hidden ">
         <div 
         id="menu"
-        class=" flex flex-col  items-center mt-8 py-8 space-y-6 bg-white"
+        class=" flex-col  items-center hidden mt-8 py-8 space-y-6 "
         >
         <a href="#" class="text-gray text-2xl font-['Poppins']">Courses</a>
         <a href="#" class="text-gray text-2xl font-['Poppins']">Dashboard</a>
@@ -62,6 +64,65 @@
        
      </div>
     </nav>
+
+    <section
+        id="content"
+        class="flex  items-center justify-center md:h-[380px]"
+    >
+            <div 
+                id="message-card"
+                class=" px-16  py-16 md:py-[104px] bg-white rounded-[15px] border border-gray border-opacity-25 "
+                >
+                <p
+                    class="text-center text-2xl  lg:text-[40px]  Poppins"
+                >
+                 There is no course created yet, you can fill the form below and create one
+                </p>
+             </div>
+    </section>
+
+    <!--Course Form-->
+    <section 
+    id="form"
+    class="ml-[36px] mr-[42px] mt-[30px] md:mt-[10px] border-t border-gray pt-2">
+    <h3 class="text-2xl md:text-[40px] text-gray Poppins"> ADD NEW COURSE</h3>
+    <form class="flex flex-col pt-4">
+        <div id="row-1" class=" md:flex justify-between  ">
+            <div id="name-input" class="h-[65px] md:h-[96px] w-full md:w-[49.5%] space-x-[22px]" >
+                <input type="text" name="name" id="name" class="pl-[30px] w-[100%]  h-10 md:h-[72px] py-[21px] bg-white rounded-[5px]" placeholder="Course Name*">
+                <div class="hidden text-rose text-base Poppins">
+                    <label for="name">Name is required</label>
+                </div>
+            </div>
+            <div id="author-input" class="h-[65px] md:h-[96px] w-full md:w-[49.5%] space-x-[22px]">
+                <input type="text" name="author" id="author" class="pl-[30px] w-full h-10 md:h-[72px] py-[21px] bg-white rounded-[5px] " placeholder="Author*">
+                <div class="hidden text-rose text-base Poppins">
+                    <label for="author">Author is required</label>
+                </div>
+            </div>
+        </div>
+        <div id="row-2" class=" md:flex justify-between ">
+            <div id="input-1" class="h-[65px] md:h-[96px] w-full md:w-[49.5%] space-x-[22px]">
+                <input type="text" name="progress" id="input-progress" class="pl-[30px] w-full h-10 md:h-[72px] py-[21px] bg-white rounded-[5px]" placeholder="Progress [Only number]*">
+                <div class=" hidden text-rose text-base Poppins">
+                    <label for="progress">Progress is required</label>
+                </div>
+            </div>
+            <div id="input-2" class="h-[65px] md:h-[96px] w-full md:w-[49.5%]  space-x-[22px]">
+                <input type="text" name="lessonNumber" id="input-lesson-number" class="pl-[30px]  w-full h-10 md:h-[72px] py-[21px] bg-white rounded-[5px]" placeholder="Lesson Number [Number Only]*">
+                <div class="hidden text-rose text-base Poppins">
+                    <label for="lessonNumber">Lesson Number is required</label>
+                </div>
+            </div>
+        </div>
+        <div class=" ">
+            <button class="md:float-right w-[100%] md:w-[306px] h-12 md:h-16 px-[73px] py-3.5 rounded-[5px] bg-green text-white text-2xl  Poppins">
+                SAVE COURSE
+            </button>
+        </div>
+    </form>
+
+    </section>
 </body>
 <script src="../js/main.js"></script>
 </html>
