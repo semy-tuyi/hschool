@@ -52,4 +52,9 @@
     transform: rotate(-45deg)  translateY(6px);
   }
 
- 
+  .progress-ring__circle {
+    stroke-dasharray: 400, 400;
+    transition: stroke-dashoffset 0.35s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+  }

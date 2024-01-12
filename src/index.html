@@ -67,7 +67,7 @@
 
     <section
         id="content"
-        class="flex  items-center justify-center md:h-[380px]"
+        class="flex  items-center justify-center md:h-[380px] hidden"
     >
             <div 
                 id="message-card"
@@ -80,6 +80,51 @@
                 </p>
              </div>
     </section>
+    <!--Course details card-->
+    <section class="md:h-full ml-[32px] mr-[42px] mt-[35px] mb-[35px] pr-[34px] pl-[22px] pt-[18px] pb-[14px] ">
+        <div id="course-details" class="lg:h-[224px] pl-[22px] pr-[34px] pt-[18px] pb-3.5 bg-white rounded-[10px] border border-white border-opacity-25 md:flex flex-row justify-between ">
+            <div id="left-part" class=" flex flex-col justify-between">
+                <h3 class="text-gray text-xl lg:text-2xl Poppins">Course Name</h3>
+                <h2 class=" text-xl md:text-2xl lg:text-[32px] font-semibold Poppins">Master The Crystal Programming Language</h2>
+                <h4 class="text-green text-xl Poppins">Descholar</h4>
+                <div id="btns" class="">
+                    <button 
+                    id="edit-btn"
+                    class="w-[67px] md:h-[50px] pl-4 pr-[15px] py-1.5 md:py-2.5 rounded-[2px] md:rounded-[5px] shadow text-green text-xl Poppins border border-green"
+                    >Edit
+                    </button>
+                    <button 
+                    id="remove-btn"
+                    class="w-[109px] md:h-[50px] pl-4 pr-[11px] py-1.5 md:py-2.5 rounded-[2px] md:rounded-[5px] shadow text-rose text-xl Poppins border border-rose "
+                    >Remove
+                    </button>
+                </div>
+            </div>
+            <div id="middle-part" class="pt-6  flex flex-row space-x-2">
+                <div id="progress-ring" class="w-[152px] h-[152px]  ">
+                    <progress value="64" max="100" class="bg-green w-full h-full rounded-[50%]"> 
+                    </progress>
+                   
+                </div>
+                <div id="percentage" class="pt-4">
+                    <h1 class="text-3xl md:text-5xl font-light Poppins text-black">64%</h1>
+                    <h3 class="text-gray text-2xl font-light Poppins">Completed</h3>
+                </div>
+
+            </div>
+            <div id="right-part" class=" flex flex-col space-y-6  border-l ">
+                <h3 class="text-gray text-xl lg:text-2xl Poppins">CURRENT COURSE</h3>
+                <h1 class=" text-black text-2xl lg:text-5xl Poppins">LESSON 24</h1>
+                <button 
+                id="update"
+                class="  lg:w-full h-10 lg:h-16   lg:pl-[84px] lg:pr-[85px] py-[7px] lg:py-3.5 bg-green rounded-[2px] md:rounded-[5px] border border-green text-white text-xl lg:text-2xl Poppins "
+                >
+                UPDATE PROGRESS
+                </button>
+            </div>
+        </div>
+    </section>
+    
 
     <!--Course Form-->
     <section 
@@ -121,8 +166,9 @@
             </button>
         </div>
     </form>
-
     </section>
 </body>
-<script src="../js/main.js"></script>
+<script src="../js/main.js">
+
+</script>
 </html>

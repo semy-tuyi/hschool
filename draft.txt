@@ -1,3 +1,4 @@
 1. Configure Tailwind to work with html
 2.Start Navigation Bar
 
+design course details card
